@@ -12,6 +12,6 @@ export interface ILoginResponse extends IToken {
       firstName: string,
       lastName: string,
     }
-  },
+  };
 }
 

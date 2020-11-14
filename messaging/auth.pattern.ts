@@ -4,5 +4,6 @@ export const AUTH_SERVICE = 'AUTH_SERVICE';
 
 export const AuthPattern = {
   isAuthenticated: { role, cmd: 'isAuthenticated' },
-  hashPass: { role, cmd: 'hash' }
-}
+  hashPass: { role, cmd: 'hash' },
+};
+

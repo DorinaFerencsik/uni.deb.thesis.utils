@@ -1,5 +1,5 @@
 import { DiagramType } from 'src/utils/enums/diagram/diagram-types.enum';
-import { Separator, Format } from 'src/utils/types/diagram.types';
+import { Format, Separator } from 'src/utils/types/diagram.types';
 
 export interface IGenerateDiagramPayload {
   type: DiagramType;
@@ -7,7 +7,7 @@ export interface IGenerateDiagramPayload {
   filename: string;
   axisX: string;
   axisY: string;
-  format?: Format; 
+  format?: Format;
 }
 
 export interface IGenerateDiagramResponse {
