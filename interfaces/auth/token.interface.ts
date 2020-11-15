@@ -9,6 +9,7 @@ export interface IToken extends IAccessToken {
 }
 
 export interface ITokenPayload {
+  id: string;
   email: string;
   roles: Roles[];
 }
