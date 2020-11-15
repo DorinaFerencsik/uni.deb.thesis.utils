@@ -6,12 +6,7 @@ export interface ILoginPayload {
 }
 
 export interface ILoginResponse extends IToken {
-  user: {
-    id: string,
-    name: {
-      firstName: string,
-      lastName: string,
-    }
-  };
+  firstName: string;
+  lastName: string;
 }
 
