@@ -1,8 +1,8 @@
-import { DiagramType } from 'src/utils/enums/diagram/diagram-types.enum';
+import { DiagramTypeEnum } from 'src/utils/enums/diagram/diagram-types.enum';
 import { Format, Separator } from 'src/utils/types/diagram.types';
 
 export interface IGenerateDiagramPayload {
-  type: DiagramType;
+  type: DiagramTypeEnum;
   csvSeparator: Separator;
   filename: string;
   axisX: string;
