@@ -1,8 +1,8 @@
-import { Format, Separator } from "utils/types/diagram.types";
+import { IBasicField } from '../common/basic-field.interface';
 
-export interface IDiagramParam {
-  name: string;
-  type: 'string' | Separator | Format | 'boolean';
-  required: boolean;
-  default?: any;
+export interface IDiagramParam extends IBasicField {
+  validations?: {
+    type: 'required' | 'pattern';
+    value?: string;
+  }[]
 }
