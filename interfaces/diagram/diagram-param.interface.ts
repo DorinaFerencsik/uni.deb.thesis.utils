@@ -4,5 +4,5 @@ export interface IDiagramParam extends IBasicField {
   validations?: {
     type: 'required' | 'pattern';
     value?: string;
-  }[]
+  }[];
 }

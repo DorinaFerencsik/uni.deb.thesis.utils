@@ -1,4 +1,4 @@
-import { DiagramTypeEnum } from "utils/enums/diagram/diagram-types.enum";
+import { DiagramTypeEnum } from 'utils/enums/diagram/diagram-types.enum';
 
 export interface IBasicDiagram {
   _id?: any;

@@ -1,4 +1,5 @@
 export enum FieldTypes {
-  textInput,
-  dropdown,
+  textInput = 'textInput',
+  dropdown = 'dropdown',
+  button = 'button',
 }
