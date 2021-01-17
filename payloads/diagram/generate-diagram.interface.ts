@@ -4,7 +4,7 @@ import { Format, Separator } from 'src/utils/types/diagram.types';
 export interface IGenerateDiagramPayload {
   type: DiagramTypeEnum;
   csvSeparator: Separator;
-  filename: string;
+  data: {source: string, name: string},
   axisX: string;
   axisY: string;
   format?: Format;
