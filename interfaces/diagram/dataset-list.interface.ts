@@ -1,6 +1,6 @@
 import { IDatasetInfo } from 'utils/interfaces/diagram/dataset-info.interface';
 
-export interface IDatasetList {
-  source: string,
-  datasets: IDatasetInfo[],
+export interface IDatasets {
+  source: string;
+  datasets: IDatasetInfo[];
 }
