@@ -1,5 +1,5 @@
-import { Format, Separator } from 'src/utils/types/diagram.types';
 import { ApiProperty } from '@nestjs/swagger';
+import { Format, Separator } from 'src/utils/types/diagram.types';
 
 export class IGenerateDiagramPayload {
   @ApiProperty()
@@ -15,11 +15,10 @@ export class IGenerateDiagramPayload {
 }
 
 export class IGenerateDiagramResponse {
-  
+
   @ApiProperty()
   result: string;
-  
-  
+
   @ApiProperty()
   source: string;
 
