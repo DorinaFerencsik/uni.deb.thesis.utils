@@ -1,17 +1,28 @@
-import { DiagramTypeEnum } from 'src/utils/enums/diagram/diagram-types.enum';
-import { Format } from 'src/utils/types/diagram.types';
+import { Format, Separator } from 'src/utils/types/diagram.types';
+import { ApiProperty } from '@nestjs/swagger';
 
-export interface IGenerateDiagramPayload {
+export class IGenerateDiagramPayload {
+  @ApiProperty()
   typeId: string;
-  data: {source: string, name: string};
+  @ApiProperty()
+  data: {source: string, name: string, csvSeparator?: Separator};
+  @ApiProperty()
   params: {
     [key: string]: any
   }[];
+  @ApiProperty()
   format?: Format;
 }
 
-export interface IGenerateDiagramResponse {
+export class IGenerateDiagramResponse {
+  
+  @ApiProperty()
   result: string;
+  
+  
+  @ApiProperty()
   source: string;
+
+  @ApiProperty()
   settings: IGenerateDiagramPayload;
 }
