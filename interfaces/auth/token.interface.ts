@@ -1,8 +1,8 @@
 export interface IAccessToken {
-  accessToken: string,
+  accessToken: string;
 }
 
 export interface IToken extends IAccessToken {
-  refreshToken: string,
+  refreshToken: string;
 }
 
