@@ -4,6 +4,6 @@ export interface ITokenPayload {
   id: string;
   email: string;
   roles: Roles[];
-  iat: number;
-  exp: number;
+  iat?: number;
+  exp?: number;
 }
