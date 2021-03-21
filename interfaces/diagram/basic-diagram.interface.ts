@@ -5,5 +5,5 @@ export interface IBasicDiagram {
   name: string;
   desc?: string;
   tags: string[];
-  type: DiagramTypeEnum;
+  type?: DiagramTypeEnum;
 }
