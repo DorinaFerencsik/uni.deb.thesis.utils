@@ -12,6 +12,8 @@ export class IGenerateDiagramPayload {
   }[];
   @ApiProperty()
   format?: Format;
+  @ApiProperty()
+  excludeNull?: boolean;
 }
 
 export class IGenerateDiagramResponse {
